@@ -1,0 +1,9 @@
+/* Inject Tailwind base styles, components, and utility classes */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add some smooth scrolling globally for internal anchor links if ever used */
+html {
+  scroll-behavior: smooth;
+}
