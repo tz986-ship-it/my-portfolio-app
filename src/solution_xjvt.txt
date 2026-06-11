@@ -1,0 +1,27 @@
+my-portfolio-app/
+├── package.json
+├── tsconfig.json
+├── tailwind.config.ts
+├── postcss.config.js
+├── README.md
+├── src/
+│   ├── middleware.ts                 # Security headers (XSS, CSRF protection simulation)
+│   ├── data/
+│   │   └── mockData.ts               # Core Database Simulation (Models & Static Data)
+│   ├── components/
+│   │   ├── Navbar.tsx                # Responsive Navigation (Client Component)
+│   │   └── Footer.tsx                # Global Footer (Server Component)
+│   └── app/
+│       ├── layout.tsx                # Root Layout (Theme, Fonts, Base HTML)
+│       ├── globals.css               # Tailwind & Global Styles
+│       ├── page.tsx                  # Home Page (Hero, Grids)
+│       ├── about/
+│       │   └── page.tsx              # About Page
+│       ├── contact/
+│       │   └── page.tsx              # Contact Page (Form with mock CSRF/Security)
+│       ├── projects/
+│       │   └── [id]/
+│       │       └── page.tsx          # Dynamic Project Detail Page
+│       └── reviews/
+│           └── [id]/
+│               └── page.tsx          # Dynamic Review Detail Page
