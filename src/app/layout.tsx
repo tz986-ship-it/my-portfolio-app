@@ -1,6 +1,7 @@
 import './globals.css'; // Import Tailwind CSS definitions globally
 import type { Metadata } from 'next'; // Type for SEO metadata
 import { Inter } from 'next/font/google'; // Optimized Google Fonts loader
+import { Analytics } from '@vercel/analytics/next'; // Vercel Web Analytics
 import Navbar from '@/components/Navbar'; // Import our Navigation Bar
 import Footer from '@/components/Footer'; // Import our Global Footer
 
@@ -33,6 +34,8 @@ export default function RootLayout({
         </main>
         {/* Footer stays at the bottom */}
         <Footer />
+        {/* Vercel Web Analytics */}
+        <Analytics />
       </body>
     </html>
   );
